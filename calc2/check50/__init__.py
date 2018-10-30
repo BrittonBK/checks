@@ -10,7 +10,7 @@ class calc2(Checks):
 	@check("exists")
 	def compiles(self):
 		"""calc2.c compiles"""
-		self.spawn("clang -o greedy calc2.c -lcs50 -lm").exit(0)
+		self.spawn("clang -o calc2 calc2.c -lcs50 -lm").exit(0)
 
 	@check("compiles")
 	def test_2_plus_3_minus_1(self):

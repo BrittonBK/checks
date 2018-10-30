@@ -15,9 +15,9 @@ class calc2(Checks):
 	@check("compiles")
 	def test_2_plus_3_minus_1(self):
 		"""input 2 + 3 - 1 yields 4"""
-		self.spawn("./calc2 2 + 3 - 1").stdout("4\n", "4\n").exit(0)
+		self.spawn("./calc2 2 + 3 - 1").stdout("4.000000\n", "4.000000\n").exit(0)
 
 	@check("compiles")
 	def test_2_plus_3_times_4(self):
 		"""input 2 + 3 * 4 yields 14"""
-		self.spawn("./calc2 2 + 3 * 4").stdout("14\n", "14\n").exit(0)
+		self.spawn("./calc2 2 + 3 x 4").stdout("14.000000\n", "14.000000\n").exit(0)

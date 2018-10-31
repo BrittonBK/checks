@@ -20,7 +20,7 @@ class calc2(Checks):
 	@check("compiles")
 	def test_244_plus_32_plus_49(self):
 		"""input 2.44 + 3.2 + 10.560000"""
-		self.spawn("./calc2 2.44 + 3.2 + 4.9").stdout("10.560000\n", "10.560000\n").exit(0)
+		self.spawn("./calc2 2.44 + 3.2 + 4.9").stdout("10.540001\n", "10.540001\n").exit(0)
 
 	@check("compiles")
 	def test_2_plus_3_times_4(self):

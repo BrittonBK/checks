@@ -29,5 +29,5 @@ class calc2(Checks):
 
 	@check("compiles")
 	def test_32_minus_5525_div_4(self):
-		"""input 32 - 55.25 / 4 yields -18.187500"""
+		"""input 32 - 55.25 / 4 yields 18.187500"""
 		self.spawn("./calc2 32 - 55.25 / 4").stdout("18.187500\n", "18.187500\n").exit(0)

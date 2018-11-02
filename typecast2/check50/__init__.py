@@ -24,5 +24,5 @@ class typecast2(Checks):
 
 	@check("compiles")
 	def test_12_55678(self):
-		"""input 12.55678 yields 12.5567800, 12, and 22"""
-		self.spawn("./typecast2 12.55678").stdout("12.5567800\n12\n22\n", "12.5567800\n12\n22\n").exit(0)
+		"""input 12.55678 yields 12.556780, 12, and 22"""
+		self.spawn("./typecast2 12.55678").stdout("12.556780\n12\n22\n", "12.556780\n12\n22\n").exit(0)

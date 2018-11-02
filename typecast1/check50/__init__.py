@@ -15,4 +15,4 @@ class typecast1(Checks):
 	@check("compiles")
 	def test_a(self):
 		"""input a yields 97\na\nAdding 3 letters gives you d"""
-		self.spawn("./typecast1 a").stdout("97\na\nAdding 3 letters gives you d\n", "97\na\nAdding 3 letters gives you d").exit(0)
+		self.spawn("./typecast1 a").stdout("97\n", "97\n").stdout("a\n", a\n").exit(0)
